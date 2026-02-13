@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For My Vanuu ❤️</title>
+
+<style>
+body{
+margin:0;
+text-align:center;
+font-family:sans-serif;
+background: linear-gradient(-45deg,#ff9a9e,#ff4e8d,#a64bf4);
+background-size:300% 300%;
+animation:bg 6s infinite alternate;
+color:white;
+}
+
+@keyframes bg{
+0%{background-position:left;}
+100%{background-position:right;}
+}
+
+h1{
+margin-top:80px;
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:30px;
+margin:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+#yes{
+background:#ff007f;
+color:white;
+}
+
+#no{
+background:gray;
+color:white;
+}
+
+#content{
+display:none;
+margin-top:30px;
+padding:20px;
+}
+
+img{
+width:250px;
+border-radius:20px;
+margin:10px;
+}
+
+audio{
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Will you be my Valentine? 💖</h1>
+
+<button id="yes">Yes 💕</button>
+<button id="no">No 😢</button>
+
+<div id="content">
+
+<h2>From where it started ❤️</h2>
+<img src="chat.jpg">
+
+<p>
+It started with a small conversation,<br>
+but somehow you became the reason behind my smiles.<br><br>
+
+If I had to choose one person every day,<br>
+it would always be you.<br><br>
+
+Will you be my Valentine? Vanuu 💕<br><br>
+
+Not only for today or tomorrow,<br>
+I want you for my whole lifee 😭✨
+</p>
+
+<h2>Our Memories 💖</h2>
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+
+<h2>Listen This 🥺</h2>
+<audio controls>
+<source src="voice.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script>
+let yes=document.getElementById("yes");
+let no=document.getElementById("no");
+let content=document.getElementById("content");
+
+let size=20;
+
+no.onclick=function(){
+size+=10;
+yes.style.fontSize=size+"px";
+}
+
+yes.onclick=function(){
+content.style.display="block";
+yes.style.display="none";
+no.style.display="none";
+}
+</script>
+
+</body>
+</html>
